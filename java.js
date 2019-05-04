@@ -1,11 +1,14 @@
 window.onload = function() {
+//array of data
 var tb=[["Day","1 hour","2 hour","3 hour","4 hour","5 hour","6 hour","7 hour"],
 [1,"COA","OOPD","OS","PDTNM","BE","PDBD","OOPD"],
 [2,"BE","COA","PDBD","COA","OOPD","PDTNM","OS"],
 [3,"COA","PDTNM","PDBD","OS","BE","OS","PDBD"],
 [4,"PDBD","LAB","LAB","LAB","COA","OOPD","PDTNM"],
 [5,"OS","OOPD","BE","PDTNM","LAB","LAB","LAB"]];
-/*switch (new Date().getDay()) {
+
+/*set day
+switch (new Date().getDay()) {
   case 0:
     day = "Sunday";
     break;
@@ -26,8 +29,11 @@ var tb=[["Day","1 hour","2 hour","3 hour","4 hour","5 hour","6 hour","7 hour"],
     break;
   case 6:
     day = "Saturday";
-}*/
-//create table
+}
+
+var dayy=document.createElement("H1");
+dayy.innerHTML=day;
+*///create table
 var table= document.getElementById("tablee");
 
 //get column number
