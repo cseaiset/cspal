@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="author" content="DSC Club ASIET" />
+  <meta name="description" content="Students' companion for a better B.Tech experience" />
+  <meta name="keywords" content="Homeworks" />
+  <meta name="title" content="CSPAL" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <!--Material design-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Source+Sans+Pro" rel="stylesheet" />
+
+  <style>
+    .demo-layout-transparent {
+      background: url('../assets/demos/transparent.jpg') center / cover;
+    }
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button{
+      /* This background is dark, so we set text to white. Use 87% black instead if
+      your background is light. */
+      color: white;
+    }
+    h1{
+      font-family: 'Rancho', cursive;
+      color: white;
+    }
+    h3{
+      font-size: 40px;
+      font-family: 'sans-serif', sans-serif;
+    }
+    td{
+      font-size: 20px;
+      font-family: 'sans-serif', sans-serif;
+    }
+  </style>
+
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <title>CSPAL Exams</title>
+</head>
+
+<body>
+
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title"><h1>CSPAL</h1></span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="index.html"><h5>HOME</h5></a>
+          <a class="mdl-navigation__link" href="timetable.html"><h5>TIMETABLE</h5></a>
+          <a class="mdl-navigation__link" href=""><h5>HOMEWORKS</h5></a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">MORE TO DO</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="index.html">HOME</a>
+        <a class="mdl-navigation__link" href="timetable.html">TIMETABLE</a>
+        <a class="mdl-navigation__link" href="homeworks.html">HOMEWORKS</a>      
+        <a class="mdl-navigation__link" href="assignments.html">ASSIGNMENTS</a>
+        <a class="mdl-navigation__link" href="tests.html">TESTS</a>
+        <a class="mdl-navigation__link" href=""><strong>EXAMS</strong></a>
+        <a class="mdl-navigation__link" href="events.html">EVENTS</a>
+      </nav>
+    </div>
+
+    <main class="mdl-layout__content">
+      <div class="page-content">
+
+        <!-- Pop up messege-->
+        <!--<div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <strong>Assignment Last Date</strong> 
+          You might need to check if yu submitted your OS Assignment!
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>-->
+      
+
+
+        <!--Heading and Table-->
+        <div class="container">
+          <div class="row">
+          </div>
+
+          <h3 class="alert-heading">
+            <div class="alert alert-danger" role="alert">EXAMS</div>
+            <!--<h5>Lets be up-to-date from today!</h5>-->
+          </h3>
+        <!--  <p>
+            <div  style="width: 100%; overflow-x: scroll;">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <thead class="thead-dark">
+                      <th scope="col" width="100">SUBJECT</th>
+                      <th scope="col">DATE</th>
+                      <th scope="col">TIME</th>
+                    </thead>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" >COA</th>
+                    <td>NA</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">OS</th>
+                    <td>NA</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">OODP</th>
+                    <td>NA</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">PDD</th>
+                    <td>NA</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">BE</th>
+                    <td>NA</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">PDTNM</th>
+                    <td>NA</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">LAB</th>
+                    <td>NA</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </p>-->
+          
+          <p class="mb-0"><h4>UNIVERSITY EXAM COMMING UP!!</h4>Time Table will be uploaded soon!</p><br>
+        </div>
+
+        <!--Footer-->
+        <div>
+          <footer class="mdl-mini-footer">
+            <p align="center">
+              <div class="mdl-mini-footer__middle-section"></div>
+              <div class="mdl-logo">
+                <img src="dsc logo.png" width="45" height="45" align="center" />
+                <strong>Developer Students Club, ASIET</strong>
+              </div>
+            </p>
+          </footer>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>
