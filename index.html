@@ -34,9 +34,7 @@
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
   <!--Template-->
-  <link rel="stylesheet" href="styles-merged.css">
   <link rel="stylesheet" href="style.min.css">
-  <script src="scripts.min.js"></script>
   <script src="custom.min.js"></script>
 
 
@@ -53,11 +51,14 @@
       color: white;
     }
 
+    .borderwork {
+      background-color: #23527c;
+    }
+
     h1 {
       font-size: 60px;
       font-family: 'Rancho', cursive;
       color: white;
-      padding-bottom: 10px;
     }
 
     h3 {
@@ -76,12 +77,11 @@
 
 </head>
 
-<body style="background-image: url(doodle1.jpg)">
+<body>
   <!-- Always shows a header, even in smaller screens. -->
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <!-- Title -->
         <span class="mdl-layout-title">
           <h1>CSPAL</h1>
         </span>
@@ -104,91 +104,109 @@
       </nav>
     </div>
 
+    <main class="mdl-layout__content">
+      <div class="page-content"><br />
+        <section>
+          <div class="container">
+            <div class="row probootstrap-gutter60 ">
+              <div class="col-md-6 ">
+                <a class="link" href="today.html">
+                  <div class="service hover_service text-center borderwork">
+                    <div class="text">
+                      <h3>
+                        <h2>TODAY</h2>
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a class="link" href="timetable.html">
+                  <div class="service hover_service text-center borderwork">
+                    <div class="text">
+                      <h3>
+                        <h2>TIME TABLE</h2>
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 ">
+                <a class="link" href="homeworks.html">
+                  <div class="service hover_service text-center borderwork">
+                    <div class="text">
+                      <h3>
+                        <h2>HOMEWORKS</h2>
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 ">
+                <a class="link" href="assignments.html">
+                  <div class="service text-center borderwork">
+                    <div class="text">
+                      <h3>
+                        <h2>ASSIGNMENTS</h2>
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a class="link" href="tests.html">
+                  <div class="service hover_service text-center borderwork">
+                    <div class="text">
+                      <h3>
+                        <h2>TESTS</h2>
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a class="link" href="exams.html">
+                  <div class="service hover_service text-center borderwork">
+                    <div class="text">
+                      <h3>
+                        <h2>EXAMS</h2>
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a class="link" href="events.html">
+                  <div class="service hover_service text-center borderwork">
+                    <div class="text">
+                      <h3>
+                        <h2>EVENTS</h2>
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    <section class="probootstrap-section">
-      <div class="container">
-        <div class="row probootstrap-gutter60 ">
-          <div class="col-md-6 ">
-            <a class="link" href="today.html">
-              <div class="service hover_service text-center borderwork">
-                <div class="text">
-                  <h3>
-                    <h2>TODAY</h2>
-                  </h3>
-                </div>
+        <!--Footer-->
+        <div>
+          <footer class="mdl-mini-footer">
+            <p align="center">
+              <div class="mdl-mini-footer__middle-section"></div>
+              <div class="mdl-logo">
+                <img src="dsc logo.png" width="45" height="45" align="center" />
+                <strong>Developer Students Club, ASIET</strong>
               </div>
-            </a>
-          </div>
-          <div class="col-md-6">
-            <a class="link" href="timetable.html">
-              <div class="service hover_service text-center borderwork">
-                <div class="text">
-                  <h3>
-                    <h2>TIME TABLE</h2>
-                  </h3>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 ">
-            <a class="link" href="homeworks.html">
-              <div class="service hover_service text-center borderwork">
-                <div class="text">
-                  <h3>
-                    <h2>HOMEWORKS</h2>
-                  </h3>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 ">
-            <a class="link" href="assignments.html">
-              <div class="service text-center borderwork">
-                <div class="text">
-                  <h3>
-                    <h2>ASSIGNMENTS</h2>
-                  </h3>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a class="link" href="tests.html">
-              <div class="service hover_service text-center borderwork">
-                <div class="text">
-                  <h3>
-                    <h2>TESTS</h2>
-                  </h3>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a class="link" href="exams.html">
-              <div class="service hover_service text-center borderwork">
-                <div class="text">
-                  <h3>
-                    <h2>EXAMS</h2>
-                  </h3>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a class="link" href="events.html">
-              <div class="service hover_service text-center borderwork">
-                <div class="text">
-                  <h3>
-                    <h2>EVENTS</h2>
-                  </h3>
-                </div>
-              </div>
-            </a>
-          </div>
+            </p>
+          </footer>
         </div>
+
       </div>
-    </section>
+    </main>
   </div>
+
 
 </body>
 
