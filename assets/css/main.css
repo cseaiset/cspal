@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400|Josefin+Sans:700");
+@import url("https://fonts.googleapis.com/css?family=Righteous|Source+Sans+Pro");
+h1 {
+  font-size: 60px;
+  font-family: 'Rancho', cursive;
+  color: white;
+}
+
+h3 {
+  font-size: 26px;
+  font-family: 'sans-serif', sans-serif;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  font-size: 30px;
+}
+
+.demo-layout-transparent {
+  background: center / cover;
+}
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+your background is light. */
+  font-color: white;
+}
+
+
