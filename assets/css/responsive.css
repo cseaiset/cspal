@@ -1,0 +1,20 @@
+/* only small desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+/* tablets */
+@media (max-width: 991px) {
+
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+/* mobile or only mobile */
+@media (max-width: 767px) {
+    #hw img{
+      width:100%;
+      height:auto;
+    }
+}
+ 
+@media (min-width: 320px) and (max-width: 480px) 
