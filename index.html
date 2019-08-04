@@ -2,342 +2,526 @@
 <html>
 
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Students' companion for a better B.Tech experience. Exclusively for S5 CSE 2017-21 Batch" />
-  <meta name="keywords" content="Homeworks, cspal, btech s5" />
-  <meta name="title" content="CSPAL" />
-  <meta name="author" content="ASIET DEVELOPERS"/>
-  <link rel="manifest" href="manifest.json">
-
-  <!--bootstrap and material design-->
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/font.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/material.indigo-pink.min.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/icon.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/css.css">
-
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" defer src="assets/js/material.min.js"></script>
-  <script type="text/javascript" src="assets/js/popper.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
-  <script type="text/javascript" src="assets/js/mdlDrawerPull.min.js"></script>
-
-
-  <style type="text/css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Students' companion for a better B.Tech experience. Exclusively for S5 CSE 2017-21 Batch" />
+    <meta name="keywords" content="Homeworks, cspal, btech s5" />
+    <meta name="title" content="CSPAL" />
+    <meta name="author" content="ASIET DEVELOPERS" />
+    <link rel="manifest" href="manifest.json">
+    <!--bootstrap and material design-->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/material.indigo-pink.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/icon.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/css.css">
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" defer src="assets/js/material.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="assets/js/mdlDrawerPull.min.js"></script>
+    <style type="text/css">
     h1 {
-      font-size: 56px;
-      font-family: 'Rancho', sans-serif;
-      color: white;
+        font-size: 56px;
+        font-family: 'Rancho', sans-serif;
+        color: white;
     }
 
     h3 {
-      font-size: 26px;
-      font-family: 'sans-serif', sans-serif;
+        font-size: 26px;
+        font-family: 'sans-serif', sans-serif;
     }
 
     h2 {
-      font-family: 'Roboto Slab', serif;
-      color: white;
-      font-size: 30px;
+        font-family: 'Roboto Slab', serif;
+        color: white;
+        font-size: 30px;
     }
-    h5{
-      font-size: 18px;
-      color: white;
-      font-family: 'sans-serif', sans-serif;
+
+    h5 {
+        font-size: 18px;
+        color: white;
+        font-family: 'sans-serif', sans-serif;
     }
-    .container{
-      background-color: white;
+
+    .container {
+        background-color: white;
     }
-    .table{
+
+    td ul{
       font-size: 20px;
     }
-    .alert-heading{
-      font-size: 30px;
-      font-weight: 800;
+
+    .table {
+        font-size: 20px;
     }
-  </style>
 
-  <title>CSPAL</title>
-
+    .alert-heading {
+        font-size: 30px;
+        font-weight: 800;
+    }
+    </style>
+    <title>CSPAL</title>
 </head>
 
 <body>
-
-<!--NavBar Starts-->
-  <!-- Always shows a header, even in smaller screens. -->
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-          <span class="mdl-layout-title"><h1>CSPAL</h1></span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-          <!-- Navigation. We hide it in small screens. -->
-          <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="#today"><h5>TODAY</h5></a>
-            <a class="mdl-navigation__link" href="#homeworks"><h5>HOMEWORKS</h5></a>
-            <a class="mdl-navigation__link" href="#timetable"><h5>TIMETABLE</h5></a>
-            <a class="mdl-navigation__link" href="#assignments"><h5>ASSIGNMENTS</h5></a>
-            <a class="mdl-navigation__link" href="#tests"><h5>TESTS</h5></a>
-            <a class="mdl-navigation__link" href="#exams_events"><h5>EXAMS&EVENTS</h5></a>
-          </nav>
+    <!--NavBar Starts-->
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">
+                    <h1>CSPAL</h1>
+                </span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="#today">
+                        <h5>TODAY</h5>
+                    </a>
+                    <a class="mdl-navigation__link" href="#homeworks">
+                        <h5>HOMEWORKS</h5>
+                    </a>
+                    <a class="mdl-navigation__link" href="#timetable">
+                        <h5>TIMETABLE</h5>
+                    </a>
+                    <a class="mdl-navigation__link" href="#assignments">
+                        <h5>ASSIGNMENTS</h5>
+                    </a>
+                    <a class="mdl-navigation__link" href="#tests">
+                        <h5>TESTS</h5>
+                    </a>
+                    <a class="mdl-navigation__link" href="#exams_events">
+                        <h5>EXAMS&EVENTS</h5>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">MORE TO DO</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#today">TODAY</a>
+                <a class="mdl-navigation__link" href="#timetable">TIMETABLE</a>
+                <a class="mdl-navigation__link" href="#homeworks">HOMEWORKS</a>
+                <a class="mdl-navigation__link" href="#assignments">ASSIGNMENTS</a>
+                <a class="mdl-navigation__link" href="#tests">TESTS</a>
+                <a class="mdl-navigation__link" href="#exams_events">EXAMS & EVENTS</a>
+            </nav>
         </div>
-      </header>
-
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">MORE TO DO</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#today">TODAY</a>
-        <a class="mdl-navigation__link" href="#timetable">TIMETABLE</a>
-        <a class="mdl-navigation__link" href="#homeworks">HOMEWORKS</a>
-        <a class="mdl-navigation__link" href="#assignments">ASSIGNMENTS</a>
-        <a class="mdl-navigation__link" href="#tests">TESTS</a>
-        <a class="mdl-navigation__link" href="#exams_events">EXAMS & EVENTS</a>
-      </nav>
-    </div>
- 
-
-<!--NavBar Ends-->
-
-
-    <main class="mdl-layout__content">
-      <div class="page-content"><br />
+        <!--NavBar Ends-->
+        <main class="mdl-layout__content">
+            <div class="page-content">
                 <!-- Pop up messege-->
-        <!--<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <!--<div class="alert alert-warning alert-dismissible fade show" role="alert">
           <strong>Assignment Last Date</strong> 
           You might need to check if yu submitted your OS Assignment!
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>-->
-
-
-<!--Today Section Starts-->
-        <section id="today">
-          <div class="container">
-            <div class="row">
-            </div>
-            <h3 class="alert-heading">
-              <div class="alert alert-crimson" role="alert">DAY 2</div>
-            </h3>
-            <p>
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <thead class="thead-dark">
-                      <th scope="col">HOUR</th>
-                      <th scope="col">SUBJECT</th>
-                    </thead>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>SS</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>SC</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>TOC</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>MPMC</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>SS/ADP LAB</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td>SS/ADP LAB</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">7</th>
-                    <td>SS/ADP LAB</td>
-                  </tr>
-                </tbody>
-              </table>
-            </p>
-
-          <p class="mb-0">Have a good Day!</p><br>
-        </div>
-      </section>
-<!--Today Section Ends-->
-        
-<!--Homework Section Starts-->
-      <section id="homeworks">
-        <div class="container">
-          <div class="row">
-          </div>
-          <h3 class="alert-heading">
-            <div class="alert alert-teal" role="alert">HOMEWORKS</div>
-            <!--<h5>Lets be up-to-date from today!</h5>-->
-          </h3>
-          <p>
-            <div  style="width: 100%; overflow-x: scroll;">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <thead class="thead-dark">
-                      <th scope="col" width="100">SUBJECT</th>
-                      <th scope="col">TO-DO</th>
-                    </thead>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row" >MPMC</th>
-                    <td>Write up: The Criterias for selecting an MC. Get the material <a href="hw.html">here</a><br>Install Keil(8051 ATMEL) in your PC</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">GT</th>
-                    <td>Find the solution: A method to check if its possible to visit all vertices while covering each edge only once.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">DC</th>
-                    <td>NA</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">TOC</th>
-                    <td>NA</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">SC</th>
-                    <td>Read through the lecture notes</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">DP</th>
-                    <td>Find some idea and work on it</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">SS LAB</th>
-                    <td>Study the algorithms for various CPU sceduling methods: 1)FCFS(Premtive) 2)SJFS 3)RoundRobin</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">ADP LAB</th>
-                    <td>NA</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </p>
-          
-          <p class="mb-0">Last Updated at 18:40 2nd Aug 2019</p><br>
-        </div>
-      </section>
-<!--Homework section Ends-->
-
-<!--TimeTable Section Starts-->
-      <section id="timetable">
-        <div class="container">
-          <div class="row">
-          </div>
-          <h3 class="alert-heading">
-            <div class="alert alert-purple" role="alert">TIME TABLE
-            <!--<h5>Lets be up-to-date from today!</h5>-->
-            </div>
-          </h3>
-          <p>
-            <div  style="width: 100%; overflow-x: scroll;">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <thead class="thead-dark">
-                      <th scope="col" align="center">DAY</th>
-                      <th scope="col" align="center">1 HOUR</th>
-                      <th scope="col" align="center">2 HOUR</th>
-                      <th scope="col" align="center">3 HOUR</th>
-                      <th scope="col" align="center">4 HOUR</th>
-                      <th scope="col" align="center">5 HOUR</th>
-                      <th scope="col" align="center">6 HOUR</th>
-                      <th scope="col" align="center">7 HOUR</th>
-                    </thead>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>GT</td>
-                    <td>SC</td>
-                    <td>MPMC</td>
-                    <td>DC</td>
-                    <td>DP</td>
-                    <td>DP</td>
-                    <td>DP</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>SS</td>
-                    <td>SC</td>
-                    <td>TOC</td>
-                    <td>MPMC</td>
-                    <td>LAB</td>
-                    <td>LAB</td>
-                    <td>LAB</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>DC</td>
-                    <td>GT</td>
-                    <td>SC</td>
-                    <td>SS-T</td>
-                    <td>LAB</td>
-                    <td>LAB</td>
-                    <td>LAB</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>MPMC</td>
-                    <td>DC</td>
-                    <td>TOC</td>
-                    <td>GT</td>
-                    <td>SS</td>
-                    <td>CC</td>
-                    <td>CC</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>TOC</td>
-                    <td>SS</td>
-                    <td>SC</td>
-                    <td>MPMC</td>
-                    <td>GT</td>
-                    <td>DC</td>
-                    <td>TOC</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-          </p>
-
-          <!--<p class="mb-0">
+                <!--Today Section Starts-->
+                <section id="today">
+                    <div class="container">
+                        <div class="row">
+                        </div>
+                        <!--<h3 class="alert-heading">
+                            <div class="alert alert-crimson" role="alert">DAY 1</div>
+                        </h3>
+                        <p>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <thead class="thead-dark">
+                                            <th scope="col">HOUR</th>
+                                            <th scope="col">SUBJECT</th>
+                                        </thead>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>GT</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>SC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>MPMC-T</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>DC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>DP</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>DP</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>DP</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>-->
+                        <!--<h3 class="alert-heading">
+                            <div class="alert alert-crimson" role="alert">DAY 2</div>
+                        </h3>
+                        <p>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <thead class="thead-dark">
+                                            <th scope="col">HOUR</th>
+                                            <th scope="col">SUBJECT</th>
+                                        </thead>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>SS</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>SC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>TOC-T</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>MPMC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>SS/ADP LAB</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>SS/ADP LAB</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>SS/ADP LAB</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>-->
+                        <h3 class="alert-heading">
+                            <div class="alert alert-crimson" role="alert">DAY 3 [MONDAY]</div>
+                        </h3>
+                        <p>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <thead class="thead-dark">
+                                            <th scope="col">HOUR</th>
+                                            <th scope="col">SUBJECT</th>
+                                        </thead>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>DC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>GT</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>SC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>SS-T</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>SS/ADP LAB</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>SS/ADP LAB</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>SS/ADP LAB</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>
+                        <!--<h3 class="alert-heading">
+                            <div class="alert alert-crimson" role="alert">DAY 4</div>
+                        </h3>
+                        <p>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <thead class="thead-dark">
+                                            <th scope="col">HOUR</th>
+                                            <th scope="col">SUBJECT</th>
+                                        </thead>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>MPMC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>DC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>TOC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>GT</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>SS</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>CC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>CC</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>-->
+                        <!--<h3 class="alert-heading">
+                            <div class="alert alert-crimson" role="alert">DAY 5</div>
+                        </h3>
+                        <p>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <thead class="thead-dark">
+                                            <th scope="col">HOUR</th>
+                                            <th scope="col">SUBJECT</th>
+                                        </thead>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>TOC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>SS</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>SC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>MPMC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>GT</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>DC</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>TOC</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>-->
+                        <p class="mb-0">Have a good Day!</p><br>
+                    </div>
+                </section>
+                <!--Today Section Ends-->
+                <!--Homework Section Starts-->
+                <section id="homeworks">
+                    <div class="container">
+                        <div class="row">
+                        </div>
+                        <h3 class="alert-heading">
+                            <div class="alert alert-teal" role="alert">HOMEWORKS</div>
+                            <!--<h5>Lets be up-to-date from today!</h5>-->
+                        </h3>
+                        <p>
+                            <div style="width: 100%; overflow-x: scroll;">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <thead class="thead-dark">
+                                                <th scope="col" width="100">SUBJECT</th>
+                                                <th scope="col">TO-DO</th>
+                                            </thead>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">MPMC</th>
+                                            <td><ul style="padding-left: 15px; margin: 0px;"><li>Write up: The Criterias for selecting an MC. Get the material <a href="hw.html" style="color: blue;"><u>here</u></a></li><li>Install Keil(8051 ATMEL) in your PC</li></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">GT</th>
+                                            <td>Find the solution: A method to check if its possible to visit all vertices while covering each edge only once.</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">DC</th>
+                                            <td>NA</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">TOC</th>
+                                            <td>NA</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">SC</th>
+                                            <td>Read through the lecture notes</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">DP</th>
+                                            <td>Find some idea and work on it</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">SS LAB</th>
+                                            <td>Study the algorithms for various CPU scheduling methods: 1)FCFS(Premtive) 2)SJFS 3)RoundRobin</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">ADP LAB</th>
+                                            <td>NA</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </p>
+                        <p class="mb-0">Last Updated at 13:50 4nd Aug 2019</p><br>
+                    </div>
+                </section>
+                <!--Homework section Ends-->
+                <!--TimeTable Section Starts-->
+                <section id="timetable">
+                    <div class="container">
+                        <div class="row">
+                        </div>
+                        <h3 class="alert-heading">
+                            <div class="alert alert-purple" role="alert">TIME TABLE
+                                <!--<h5>Lets be up-to-date from today!</h5>-->
+                            </div>
+                        </h3>
+                        <p>
+                            <div style="width: 100%; overflow-x: scroll;">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <thead class="thead-dark">
+                                                <th scope="col" align="center">HOUR</th>
+                                                <th scope="col" align="center">DAY 1</th>
+                                                <th scope="col" align="center">DAY 2</th>
+                                                <th scope="col" align="center">DAY 3</th>
+                                                <th scope="col" align="center">DAY 4</th>
+                                                <th scope="col" align="center">DAY 5</th>
+                                            </thead>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>GT</td>
+                                            <td>SS</td>
+                                            <td>DC</td>
+                                            <td>MPMC</td>
+                                            <td>TOC</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>SC</td>
+                                            <td>SC</td>
+                                            <td>GT</td>
+                                            <td>DC</td>
+                                            <td>SS</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>MPMC-T</td>
+                                            <td>TOC-T</td>
+                                            <td>SC</td>
+                                            <td>TOC</td>
+                                            <td>SC</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>DC</td>
+                                            <td>MPMC</td>
+                                            <td>SS-T</td>
+                                            <td>GT</td>
+                                            <td>MPMC</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>DP</td>
+                                            <td>LAB</td>
+                                            <td>LAB</td>
+                                            <td>SS</td>
+                                            <td>GT</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>DP</td>
+                                            <td>LAB</td>
+                                            <td>LAB</td>
+                                            <td>CC</td>
+                                            <td>DC</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>DP</td>
+                                            <td>LAB</td>
+                                            <td>LAB</td>
+                                            <td>CC</td>
+                                            <td>TOC</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </p>
+                        <!--<p class="mb-0">
             Yes. This day is gonna get fucked up!
           </p><br>-->
-        </div>
-      </section>
-<!--TimeTable Section Ends-->
-
-<!--Assignments Section Starts-->
-      <section id="assignments">
-        <div class="container">
-          <div class="row">
-          </div>
-
-          <h3 class="alert-heading">
-            <div class="alert alert-pink" role="alert">ASSIGNMENTS</div>
-            <!--<h5>Lets be up-to-date from today!</h5>-->
-          </h3>
-          <p>NA
-            <!--<div  style="width: 100%; overflow-x: scroll;">
+                    </div>
+                </section>
+                <!--TimeTable Section Ends-->
+                <!--Assignments Section Starts-->
+                <section id="assignments">
+                    <div class="container">
+                        <div class="row">
+                        </div>
+                        <h3 class="alert-heading">
+                            <div class="alert alert-pink" role="alert">ASSIGNMENTS</div>
+                            <!--<h5>Lets be up-to-date from today!</h5>-->
+                        </h3>
+                        <p>NA
+                            <!--<div  style="width: 100%; overflow-x: scroll;">
               <table class="table table-striped">
                 <thead>
                   <tr>
@@ -409,25 +593,22 @@
                 </tbody>
               </table>
             </div>-->
-          </p>
-          
-          <!--<p class="mb-0">You'll get mark for this shit.</p><br>-->
-        </div>
-      </section>
-<!--Assignments Section Ends-->
-
-<!--Tests Section starts-->
-      <section id="tests">
-        <div class="container">
-          <div class="row">
-          </div>
-
-          <h3 class="alert-heading">
-            <div class="alert alert-yellow" role="alert">TESTS</div>
-            <!--<h5>Lets be up-to-date from today!</h5>-->
-          </h3>
-          <p>NA
-            <!--<div  style="width: 100%; overflow-x: scroll;">
+                        </p>
+                        <!--<p class="mb-0">You'll get mark for this shit.</p><br>-->
+                    </div>
+                </section>
+                <!--Assignments Section Ends-->
+                <!--Tests Section starts-->
+                <section id="tests">
+                    <div class="container">
+                        <div class="row">
+                        </div>
+                        <h3 class="alert-heading">
+                            <div class="alert alert-yellow" role="alert">TESTS</div>
+                            <!--<h5>Lets be up-to-date from today!</h5>-->
+                        </h3>
+                        <p>NA
+                            <!--<div  style="width: 100%; overflow-x: scroll;">
               <table class="table table-striped">
                 <thead>
                   <tr>
@@ -499,60 +680,52 @@
                 </tbody>
               </table>
             </div>-->
-          </p>
-          
-          <!--<p class="mb-0">I know this is hell. But you gotta face it.</p><br>-->
-        </div>
-      </section>
-<!--Tests section ends-->
-
-<!--Exams and Events Section starts-->
-      <section id="exams_events">
-        <div class="container">
-          <div class="row">
-          </div>
-
-          <h3 class="alert-heading">
-            <div class="alert alert-yo" role="alert">EXAMS & EVENTS</div></h3>
-            <!--<h5>Lets be up-to-date from today!</h5>-->
-         <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=Z3E4aGgzcXVuNzZqYnIxNmpxOG9hZGQyNjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00&amp;showTz=0&amp;showTitle=0&amp;showPrint=0&amp;showTabs=1" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
-      </section>
-      <br>
-<!--Exams and Events Section ends-->
-
-        
-<!--Footer Section Starts-->
-        <div>
-          <footer class="mdl-mini-footer">
-            <p align="center">
-              <div class="mdl-mini-footer__middle-section"></div>
-              <div class="mdl-logo">
-                <img src="assets/images/dsc logo.png" width="45" height="45" align="center" />
-                <strong>ASIET Developers</strong>
-              </div>
-            </p>
-          </footer>
-        </div>
-<!--Footer Section Ends-->
-
-      </div>
-    </main>
-  </div>
-
-
-
+                        </p>
+                        <!--<p class="mb-0">I know this is hell. But you gotta face it.</p><br>-->
+                    </div>
+                </section>
+                <!--Tests section ends-->
+                <!--Exams and Events Section starts-->
+                <section id="exams_events">
+                    <div class="container">
+                        <div class="row">
+                        </div>
+                        <h3 class="alert-heading">
+                            <div class="alert alert-yo" role="alert">EXAMS & EVENTS</div>
+                        </h3>
+                        <!--<h5>Lets be up-to-date from today!</h5>-->
+                        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=Z3E4aGgzcXVuNzZqYnIxNmpxOG9hZGQyNjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00&amp;showTz=0&amp;showTitle=0&amp;showPrint=0&amp;showTabs=1" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </section>
+                <br>
+                <!--Exams and Events Section ends-->
+                <!--Footer Section Starts-->
+                <div>
+                    <footer class="mdl-mini-footer">
+                        <p align="center">
+                            <div class="mdl-mini-footer__middle-section"></div>
+                            <div class="mdl-logo">
+                                <img src="assets/images/dsc logo.png" width="45" height="45" align="center" />
+                                <strong>ASIET Developers</strong>
+                            </div>
+                        </p>
+                    </footer>
+                </div>
+                <!--Footer Section Ends-->
+            </div>
+        </main>
+    </div>
 </body>
 <script>
- if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator) {
     console.log("Will the service worker register?");
     navigator.serviceWorker.register('service-worker.js')
-      .then(function(reg){
-        console.log("Yes, it did.");
-     }).catch(function(err) {
-        console.log("No it didn't. This happened:", err)
-    });
- }
+        .then(function(reg) {
+            console.log("Yes, it did.");
+        }).catch(function(err) {
+            console.log("No it didn't. This happened:", err)
+        });
+}
 </script>
 
 </html>
