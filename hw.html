@@ -8,6 +8,12 @@
     <meta name="keywords" content="Homeworks, cspal, btech s5" />
     <meta name="title" content="CSPAL" />
     <meta name="author" content="ASIET DEVELOPERS" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CSPAL">
+    <meta name="theme-color" content="#5C9EB1" />
+    <link rel="apple-touch-icon" href="assets/icons/152x152.png">
+    <link rel="manifest" href="manifest.json">
     <!--bootstrap and material design-->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
@@ -16,10 +22,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/icon.css">
     <link rel="stylesheet" type="text/css" href="assets/css/css.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" defer src="assets/js/material.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="assets/js/mdlDrawerPull.min.js"></script>
     <style type="text/css">
     h1 {
         font-size: 56px;
@@ -72,19 +80,17 @@
 
 <body>
     <section id="hw" align="center">
-        <a href="assets/images/hw/hw_MCU.jpg" download="MPMC1.jpg">
+
+        <!--<a href="assets/images/hw/hw_MCU.jpg" download="MPMC1.jpg">
             <img src="assets/images/hw/hw_MCU.jpg" alt="image1"><br></a>
         <a href="assets/images/hw/hw_MCU1.jpg" download="MPMC2.jpg">
-            <img src="assets/images/hw/hw_MCU1.jpg" alt="image2"></a><br><br>
+            <img src="assets/images/hw/hw_MCU1.jpg" alt="image2"></a><br><br>-->
+        <a href="assets/images/hw/MCUarch.jpg" download="MCUarch.jpg">
+            <img src="assets/images/hw/MCUarch.jpg" alt="MC Architecture"><br></a>
+        <a href="assets/images/hw/MCUpin.jpg" download="MCUpin.jpg">
+            <img src="assets/images/hw/MCUpin.jpg" alt="MC Pin Diagram"></a><br><br>
+
         <div align="center">
-            <!--<a href="assets/images/hw/hw_MCU.jpg" download="MPMC1.jpg">
-			<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">show image 1	
-			</button>
-		</a>
-		<a href="assets/images/hw/hw_MCU1.jpg" download="MPMC2.jpg">
-			<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"> image 2	
-			</button>
-		</a>-->
             <a href="index.html">
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Back to Home Page
                 </button>
