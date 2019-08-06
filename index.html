@@ -756,7 +756,7 @@ if ('serviceWorker' in navigator) {
             console.log("No it didn't. This happened:", err)
         });
 }
-function myFunction() {
+$(document).ready(function() {
   var d = new Date();
   var weekday = new Array(7);
   weekday[0] = "Sunday";
@@ -769,7 +769,7 @@ function myFunction() {
 
   var n = weekday[d.getDay()];
   document.getElementById("day").innerHTML = n;
-}
+});
 </script>
 
 </html>
