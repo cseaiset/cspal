@@ -272,7 +272,7 @@
                             </table>
                         </p>-->
                         <h3 class="alert-heading">
-                            <div class="alert alert-crimson" role="alert">DAY 4 [TUESDAY]</div>
+                            <div class="alert alert-crimson" role="alert"><h1 id ="day"></h1></div>
                         </h3>
                         <p>
                             <table class="table table-striped">
@@ -755,6 +755,20 @@ if ('serviceWorker' in navigator) {
         }).catch(function(err) {
             console.log("No it didn't. This happened:", err)
         });
+}
+function myFunction() {
+  var d = new Date();
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+
+  var n = weekday[d.getDay()];
+  document.getElementById("day").innerHTML = n;
 }
 </script>
 
