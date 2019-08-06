@@ -59,7 +59,7 @@ self.addEventListener('fetch', function(event) {
 
 self.addEventListener('activate', function(event) {
 
-  var cacheWhitelist = ['cspal-v1'];
+  var cacheWhitelist = [CACHE_NAME];
 
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
