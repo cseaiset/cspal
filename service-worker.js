@@ -1,7 +1,7 @@
 self.addEventListener('fetch', function(event) {});
 
 const FILES_TO_CACHE = [
-  'index.html',
+  'offline.html',
 ];
 
 evt.waitUntil(
