@@ -1,5 +1,6 @@
   var CACHE_NAME = 'cspal-v1';
   var urlsToCache = [
+  '/'
   ];
 
 self.addEventListener('install', function(event) {
