@@ -3,19 +3,19 @@
   '/index.html'
   ];
 
-self.addEventListener('activate', function(event) {
+self.addEventListener('install', event => {
   event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.filter(function(cacheName) {
-          return true;
-          // Return true if you want to remove this cache,
-          // but remember that caches are shared across
-          // the whole origin
-        }).map(function(cacheName) {
-          return caches.delete(CACHE_NAME);
+    caches.open(`static-${version}`)
+      .then(cache => Promise.all(
+        [
+          '/styles.css',
+          '/script.js'
+        ].map(url => {
+          return fetch(`${url}?${Math.random()}`).then(response => {
+            if (!response.ok) throw Error('Not ok');
+            return cache.put(url, response);
+          })
         })
-      );
-    })
+      ))
   );
 });
