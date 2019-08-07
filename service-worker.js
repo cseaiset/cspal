@@ -1,40 +1,21 @@
   var CACHE_NAME = 'cspal-v1';
   var urlsToCache = [
-  '/',
-  'assets/css/main.css',
-  'assets/css/bootstrap.min.css',
-  'assets/css/material.indigo-pink.min.css',
-  'assets/css/style.min.css',
-  'assets/css/icon.css',
-  'assets/css/css.css',
-  'assets/js/bootstrap.min.js',
-  'assets/js/material.min.js',
-  'assets/js/popper.min.js'
+  '/index.html'
   ];
 
-self.addEventListener('install', event => {
+self.addEventListener('activate', function(event) {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => Promise.all(
-        urlsToCache.map(url => {
-          return fetch(`${url}?${Math.random()}`).then(response => {
-            if (!response.ok) throw Error(`${url}?${Math.random()}` + 'Not ok');
-            return cache.put(url, response);
-          });
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.filter(function(cacheName) {
+          return true;
+          // Return true if you want to remove this cache,
+          // but remember that caches are shared across
+          // the whole origin
+        }).map(function(cacheName) {
+          return caches.delete(CACHE_NAME);
         })
-      ))
-  );
-});
-
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request).then(function(response) {
-      if (response) {
-        cache.delete(event.request);
-        cache.put(event.request, response);
-        return response;
-      }
-      return fetch(event.request);
+      );
     })
   );
 });
