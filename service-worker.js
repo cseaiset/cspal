@@ -12,7 +12,7 @@
   'assets/js/popper.min.js'
   ];
 
-self.addEventListener(['fetch', 'install'], event => {
+self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => Promise.all(
@@ -20,10 +20,21 @@ self.addEventListener(['fetch', 'install'], event => {
           return fetch(`${url}?${Math.random()}`).then(response => {
             if (!response.ok) throw Error(`${url}?${Math.random()}` + 'Not ok');
             return cache.put(url, response);
-          }).catch(function() {
-            return caches.match(event.request);
           });
         })
       ))
+  );
+});
+
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request).then(function(response) {
+      if (response) {
+        cache.delete(event.request);
+        cache.put(event.request, response);
+        return response;
+      }
+      return fetch(event.request);
+    })
   );
 });
