@@ -1,15 +1,5 @@
   var CACHE_NAME = 'cspal-v1';
   var urlsToCache = [
-    '/',
-    '/assets/css/bootstrap.min.css',
-    '/assets/css/main.css',
-    '/assets/css/style.min.css',
-    'assets/css/material.indigo-pink.min.css',
-    'assets/js/mdlDrawerPull.min.js',
-    'assets/js/jquery.touchSwipe.min.js',
-    'assets/js/bootstrap.min.js',
-    'assets/js/material.min.js',
-    'assets/js/popper.min.js'
   ];
 
 self.addEventListener('install', function(event) {
