@@ -11,7 +11,7 @@ self.addEventListener('install', event => {
       .then(cache => Promise.all(
         urlsToCache.map(url => {
           return fetch(`${url}?${Math.random()}`).then(response => {
-            if (!response.ok) throw Error('Not ok');
+            if (!response.ok) throw Error(`${url}?${Math.random()}` + 'Not ok');
             return cache.put(url, response);
           })
         })
