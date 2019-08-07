@@ -7,7 +7,7 @@
     <meta name="description" content="Students' companion for a better B.Tech experience. Exclusively for S5 CSE 2017-21 Batch ASIET" />
     <meta name="keywords" content="Homeworks, cspal, btech s5" />
     <meta name="title" content="CSPAL" />
-    <meta name="author" content="ASIET DEVELOPERS" />
+    <meta name="author" content="George&Merry" />
     <!-- CODELAB: Add iOS meta tags and icons -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -18,7 +18,6 @@
     <!--bootstrap and material design-->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/font.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/material.indigo-pink.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/icon.css">
@@ -53,7 +52,15 @@
         font-family: 'sans-serif', sans-serif;
     }
 
+    a{
+    	color: teal !important;
+    	text-decoration-line: underline;
+    }
+
     .mdl-mini-footer:hover div a{color:grey;}
+    .mdl-js-button{
+    	background-color:teal !important;
+    }
 
     .container {
         background-color: white;
@@ -76,6 +83,7 @@
         font-size: 30px;
         font-weight: 800;
     }
+    #more {display: none;}
     </style>
     <title>CSPAL</title>
 </head>
@@ -142,8 +150,8 @@
                     <div class="container">
                         <div class="row">
                         </div>
-                        <!--<h3 class="alert-heading">
-                            <div class="alert alert-crimson" role="alert">DAY 1</div>
+                        <h3 class="alert-heading">
+                            <div class="alert alert-crimson" role="alert">DAY 1 [THURSDAY]</div>
                         </h3>
                         <p>
                             <table class="table table-striped">
@@ -186,7 +194,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </p>-->
+                        </p>
                         <!--<h3 class="alert-heading">
                             <div class="alert alert-crimson" role="alert">DAY 2</div>
                         </h3>
@@ -322,8 +330,8 @@
                                 </tbody>
                             </table>
                         </p>-->
-                        <h3 class="alert-heading">
-                            <div class="alert alert-crimson" role="alert">DAY 5 [WEDNESDAY]</div>
+                        <!--<h3 class="alert-heading">
+                            <div class="alert alert-crimson" role="alert">DAY 5</div>
                         </h3>
                         <p>
                             <table class="table table-striped">
@@ -366,8 +374,8 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </p>
-                        <p class="mb-0">Have a good Day!<br>Last Updated at 18:50 6th Aug 2019</p><br>
+                        </p>-->
+                        <p class="mb-0">Have a good Day!<br>Last Updated at 19:02 7th Aug 2019</p><br>
                     </div>
                 </section>
                 <!--Today Section Ends-->
@@ -396,13 +404,19 @@
                                             <th scope="row">MPMC</th>
                                             <td>
                                                 <!--<ul style="padding-left: 15px; margin: 0px;">-->
+                                                	Bring tutorial book!<br>
+                                                	Study the on-chip resourses in MC<br>
+                                                	<span id="dots"></span>
+                                                	<span id="more">
                                                     Draw the pin diagram and architecture of MC in the notebook. Get the figures
-                                                    	<a href="hw.html" style="color: #4ca6a6;"><u>here</u></a>
+                                                    	<a href="hw.html">here</a><br>
+                                                    </span>
+                                                    <button onclick="myFunction()" id="myBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Old Homeworks</button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <th scope="row">GT</th>
-                                            <td>Go through todays portions</td>
+                                            <td>NA</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">DC</th>
@@ -410,19 +424,21 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">TOC</th>
-                                            <td>NA</td>
+                                            <td>Complete the diagram with circles(watever it is called)</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">SC</th>
-                                            <td>Go through lecture notes</td>
+                                            <td>New <a href="#assignments">Assignment</a> Added</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">DP</th>
-                                            <td>Find some idea and work on it</td>
+                                            <td>Finalise your idea and prepare a simple ppt on wat it is.(1 minute)</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">SS LAB</th>
-                                            <td>Study the algorithms for various CPU scheduling methods: 1)FCFS(Premtive) 2)SJFS 3)RoundRobin</td>
+                                            <td>Experiment 1: Study the algorithms for various CPU scheduling methods: 1)FCFS(Non-Preemtive and Preemtive) 2)SJFS 3)RoundRobin<br>
+                                            	Experiment 2: File Organisation Techniques (Check your emails for the Lab Manual)
+                                            </td>
                                         </tr>
                                         <tr>
                                             <th scope="row">ADP LAB</th>
@@ -566,60 +582,22 @@
                                                     <li>Interpreter</li>
                                                 </ol>
                                             </td>
-                                            <td>I think we have enough time</td>
+                                            <td>13 Aug Tuesday</td>
                                             <td>No one has uploaded yet</td>
                                             <td>
-                                                Share your work <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7YFpAG2Awj9GdKqnvlhl2soaUhpG7yM76W0hdO5kBwv7YlQ/viewform" style="color: blue;"><u>here</u></a>;)
+                                                Share your work <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7YFpAG2Awj9GdKqnvlhl2soaUhpG7yM76W0hdO5kBwv7YlQ/viewform">here</a>;)
                                             </td>
                                         </tr>
-                                        <!--<tr>
-                    <th scope="row">OS</th>
-                    <td>NA</td>
-                    <td>Yesterday</td>
-                    <td>
-                      <a href="" download>os.pdf</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">OODP</th>
-                    <td>NA</td>
-                    <td>Yesterday</td>
-                    <td>
-                      <a href="" download>oodp.pdf</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">PDD</th>
-                    <td>NA</td>
-                    <td>Yesterday</td>
-                    <td>
-                      <a href="" download>pdd.pdf</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">BE</th>
-                    <td>NA</td>
-                    <td>Yesterday</td>
-                    <td>
-                      <a href="" download>be.pdf</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">PDTNM</th>
-                    <td>NA</td>
-                    <td>Yesterday</td>
-                    <td>
-                      <a href="" download>pdtnm.pdf</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">LAB</th>
-                    <td>NA</td>
-                    <td>Yesterday</td>
-                    <td>
-                      <a href="" download>lab.pdf</a>
-                    </td>
-                  </tr>-->
+                                        <tr>
+                                            <th scope="row">SC</th>
+                                            <td>Compare Artificial Neural Network and Biological Neural Networks
+                                            </td>
+                                            <td>14 Aug Wednesday</td>
+                                            <td>No one has uploaded yet</td>
+                                            <td>
+                                                Share your work <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7YFpAG2Awj9GdKqnvlhl2soaUhpG7yM76W0hdO5kBwv7YlQ/viewform" >here</a>;)
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -743,6 +721,12 @@
 					                </button>
 					            </a>
                         	</div>
+                        	<div align="center">
+					            <a href="#today">
+					                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Back to Top
+					                </button>
+					            </a>
+					        </div>
                         </div>
                     </p>
                 </footer>
@@ -781,6 +765,21 @@
 	  var n = weekday[d.getDay()];
 	  document.getElementById("day").innerHTML = n;
 	});
+	function myFunction() {
+	  var dots = document.getElementById("dots");
+	  var moreText = document.getElementById("more");
+	  var btnText = document.getElementById("myBtn");
+
+	  if (dots.style.display === "none") {
+	    dots.style.display = "inline";
+	    btnText.innerHTML = "Old Homeworks"; 
+	    moreText.style.display = "none";
+	  } else {
+	    dots.style.display = "none";
+	    btnText.innerHTML = "Read less"; 
+	    moreText.style.display = "inline";
+	  }
+	}
 </script>
 
 </html>
