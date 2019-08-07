@@ -12,7 +12,7 @@
   'assets/js/popper.min.js'
   ];
 
-self.addEventListener('install', event => {
+self.addEventListener(['fetch', 'install'], event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => Promise.all(
