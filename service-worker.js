@@ -5,7 +5,7 @@
 
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(`static-${version}`)
+    caches.open(CACHE_NAME)
       .then(cache => Promise.all(
         urlsToCache.map(url => {
           return fetch(`${url}?${Math.random()}`).then(response => {
