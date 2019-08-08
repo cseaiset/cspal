@@ -59,7 +59,7 @@
 
     .mdl-mini-footer:hover div a{color:grey;}
     .mdl-js-button{
-    	background-color:teal !important;
+    	background-color:grey !important;
     }
 
     .container {
@@ -151,6 +151,9 @@
                         <div class="row">
                         </div>
                         <h3 class="alert-heading">
+                            <div class="alert alert-pink" role="alert">HOLIDAY</div>
+                        </h3>
+                        <!--<h3 class="alert-heading">
                             <div class="alert alert-crimson" role="alert">DAY 1 [THURSDAY]</div>
                         </h3>
                         <p>
@@ -194,7 +197,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </p>
+                        </p>-->
                         <!--<h3 class="alert-heading">
                             <div class="alert alert-crimson" role="alert">DAY 2</div>
                         </h3>
@@ -375,7 +378,7 @@
                                 </tbody>
                             </table>
                         </p>-->
-                        <p class="mb-0">Have a good Day!<br>Last Updated at 19:02 7th Aug 2019</p><br>Thanks all for your valuable feedback<br>
+                        <p style="font-size: 20px; color: black; padding-bottom: 10px;">Happy Holiday (Stay Safe!)<br>Last Updated at 2019 Aug 9th 00:10</p>
                     </div>
                 </section>
                 <!--Today Section Ends-->
@@ -405,11 +408,10 @@
                                             <td>
                                                 <!--<ul style="padding-left: 15px; margin: 0px;">-->
                                                 	Bring tutorial book!<br>
-                                                	Study the on-chip resourses in MC<br>
+                                                	Revise the portions abt MC (Take a printout or study from pdf)<br>
                                                 	<span id="dots"></span>
                                                 	<span id="more">
-                                                    Draw the pin diagram and architecture of MC in the notebook. Get the figures
-                                                    	<a href="hw.html">here</a><br>
+                                                    Draw the pin diagram and architecture of MC in the notebook. Get the figures<a href="hw.html">here</a><br>
                                                     </span>
                                                     <button onclick="myFunction()" id="myBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Old Homeworks</button>
                                             </td>
@@ -420,24 +422,29 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">DC</th>
-                                            <td>NA</td>
+                                            <td>Bring Calculator</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">TOC</th>
-                                            <td>Complete the diagram with circles(watever it is called)</td>
+                                            <td>Try NFA Problems</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">SC</th>
-                                            <td>New <a href="#assignments">Assignment</a> Added</td>
+                                            <td>NA</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">DP</th>
-                                            <td>Finalise your idea and prepare a simple ppt on wat it is.(1 minute)</td>
+                                            <td>NA</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">SS LAB</th>
-                                            <td>Experiment 1: Study the algorithms for various CPU scheduling methods: 1)FCFS(Non-Preemtive and Preemtive) 2)SJFS 3)RoundRobin<br>
+                                            <td>Experiment 1: Study the algorithms for various CPU scheduling methods:
+                                            	<span id="dot"></span>
+                                            	<span id="more1"> 
+                                            	1)FCFS(Non-Preemtive and Preemtive) 2)SJFS 3)RoundRobin<br>
                                             	Experiment 2: File Organisation Techniques (Check your emails for the Lab Manual)
+                                            	</span>
+                                                <button onclick="myFunction1()" id="myBtn1" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Show More</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -765,6 +772,7 @@
 	  var n = weekday[d.getDay()];
 	  document.getElementById("day").innerHTML = n;
 	});
+
 	function myFunction() {
 	  var dots = document.getElementById("dots");
 	  var moreText = document.getElementById("more");
@@ -774,12 +782,31 @@
 	    dots.style.display = "inline";
 	    btnText.innerHTML = "Old Homeworks"; 
 	    moreText.style.display = "none";
-	  } else {
+	  } 
+	  else {
 	    dots.style.display = "none";
 	    btnText.innerHTML = "Read less"; 
 	    moreText.style.display = "inline";
 	  }
 	}
+
+	function myFunction1() {
+	  var dot = document.getElementById("dot");
+	  var moreText1 = document.getElementById("more1");
+	  var btnText1 = document.getElementById("myBtn1");
+
+	  if (dot.style.display === "none") {
+	    dot.style.display = "inline";
+	    btnText1.innerHTML = "Show More"; 
+	    moreText1.style.display = "none";
+	  } 
+	  else {
+	    dot.style.display = "none";
+	    btnText1.innerHTML = "Show Less"; 
+	    moreText1.style.display = "inline";
+	  }
+	}
+
 </script>
 
 </html>
