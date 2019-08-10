@@ -12,7 +12,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-title" content="CSPAL">
-	<meta name="theme-color" content="#000" />
+	<meta name="theme-color" content="lightblue" />
 	<link rel="apple-touch-icon" href="assets/icons/152x152.png">
     <link rel="manifest" href="manifest.json">
     <!--bootstrap and material design-->
@@ -20,8 +20,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/material.indigo-pink.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/icon.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/css.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/icons.css"> 
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" defer src="assets/js/material.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
@@ -29,61 +28,62 @@
     <script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
     <script type="text/javascript" src="assets/js/mdlDrawerPull.min.js"></script>
     <style type="text/css">
-    h1 {
-        font-size: 56px;
-        font-family: 'Rancho', sans-serif;
-        color: white;
-    }
+		h1 {
+		    font-size: 56px;
+		    font-family: 'Rancho', sans-serif;
+		    color: white;
+		}
 
-    h3 {
-        font-size: 26px;
-        font-family: 'sans-serif', sans-serif;
-    }
+		h3 {
+		    font-size: 26px;
+		    font-family: 'sans-serif', sans-serif;
+		}
 
-    h2 {
-        font-family: 'Roboto Slab', serif;
-        color: white;
-        font-size: 30px;
-    }
+		h2 {
+		    font-family: 'Roboto Slab', serif;
+		    color: white;
+		    font-size: 30px;
+		}
 
-    h5 {
-        font-size: 18px;
-        color: white;
-        font-family: 'sans-serif', sans-serif;
-    }
+		h5 {
+		    font-size: 18px;
+		    color: white;
+		    font-family: 'sans-serif', sans-serif;
+		}
 
-    a{
-    	color: teal !important;
-    	text-decoration-line: underline;
-    }
+		a{
+		  color: teal !important;
+		  text-decoration-line: underline;
+		}
 
-    .mdl-mini-footer:hover div a{color:grey;}
-    .mdl-js-button{
-    	background-color:grey !important;
-    }
+		.mdl-mini-footer:hover div a{color:grey;}
+		.mdl-js-button{
+		  background-color:grey !important;
+		}
 
-    .container {
-        background-color: white;
-    }
+		.container {
+		    background-color: white;
+		}
 
-    td ul {
-        font-size: 20px;
-    }
+		td ul {
+		    font-size: 20px;
+		}
 
-    th {
-        align-content: center;
-        padding: inherit;
-    }
+		th {
+		    align-content: center;
+		    padding: inherit;
+		}
 
-    .table {
-        font-size: 20px;
-    }
+		.table {
+		    font-size: 20px;
+		}
 
-    .alert-heading {
-        font-size: 30px;
-        font-weight: 800;
-    }
-    #more {display: none;}
+		.alert-heading {
+		    font-size: 30px;
+		    font-weight: 800;
+		}
+		#more {display: none;}
+
     </style>
     <title>CSPAL</title>
 </head>
@@ -132,6 +132,7 @@
                 <a class="mdl-navigation__link" href="#assignments">ASSIGNMENTS</a>
                 <!--<a class="mdl-navigation__link" href="#tests">TESTS</a>-->
                 <a class="mdl-navigation__link" href="#exams_events">EXAMS & EVENTS</a>
+                <a class="mdl-navigation__link" href="https://docs.google.com/forms/d/e/1FAIpQLScFoILZ306Swhgy66p8MS2ATj9ksvMeDJPL04AFw91Fd-sRyw/viewform">SUBMIT FEEDBACK</a>
             </nav>
         </div>
         <!--NavBar Ends-->
@@ -378,7 +379,8 @@
                                 </tbody>
                             </table>
                         </p>-->
-                        <p style="font-size: 20px; color: black; padding-bottom: 10px;">Happy Holiday (Stay Safe!)<br>Last Updated at 2019 Aug 9th 00:10</p>
+                        <p style="font-size: 20px; color: black; padding-bottom: 10px;">Happy Holidays (Stay Safe!)
+                        </p>
                     </div>
                 </section>
                 <!--Today Section Ends-->
@@ -408,7 +410,8 @@
                                             <td>
                                                 <!--<ul style="padding-left: 15px; margin: 0px;">-->
                                                 	Bring tutorial book!<br>
-                                                	Revise the portions abt MC (Take a printout or study from pdf)<br>
+                                                	Revise the portions abt MC (Take a printout or study from pdf)
+                                                	<br>
                                                 	<span id="dots"></span>
                                                 	<span id="more">
                                                     Draw the pin diagram and architecture of MC in the notebook. Get the figures<a href="hw.html">here</a><br>
@@ -439,12 +442,13 @@
                                         <tr>
                                             <th scope="row">SS LAB</th>
                                             <td>Experiment 1: Study the algorithms for various CPU scheduling methods:
-                                            	<span id="dot"></span>
-                                            	<span id="more1"> 
+                                            	<span id="dots1"></span>
+                                            	<span id="more1" style="display: none;"> 
                                             	1)FCFS(Non-Preemtive and Preemtive) 2)SJFS 3)RoundRobin<br>
                                             	Experiment 2: File Organisation Techniques (Check your emails for the Lab Manual)
                                             	</span>
-                                                <button onclick="myFunction1()" id="myBtn1" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Show More</button>
+                                                <button onclick="myFunction_1()" id="myBtn1" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Show More
+                                                </button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -720,7 +724,7 @@
                     <p align="center">
                         <div class="mdl-mini-footer__middle-section"></div>
                         <div class="mdl-logo">
-                            <img src="assets/images/dsc logo.png" width="45" height="45" align="center" />
+                            <img src="assets/images/dsc logo.jpg" width="45" height="45" align="center" />
                             <strong>ASIET Developers</strong><br>
 							<div align="center">
 					            <a href="https://docs.google.com/forms/d/e/1FAIpQLScFoILZ306Swhgy66p8MS2ATj9ksvMeDJPL04AFw91Fd-sRyw/viewform">
@@ -728,7 +732,7 @@
 					                </button>
 					            </a>
                         	</div>
-                        	<div align="center">
+                        	<div align="center" style="padding-top: 10px;">
 					            <a href="#today">
 					                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Back to Top
 					                </button>
@@ -785,28 +789,26 @@
 	  } 
 	  else {
 	    dots.style.display = "none";
-	    btnText.innerHTML = "Read less"; 
+	    btnText.innerHTML = "Show less"; 
 	    moreText.style.display = "inline";
 	  }
 	}
 
-	function myFunction1() {
-	  var dot = document.getElementById("dot");
-	  var moreText1 = document.getElementById("more1");
-	  var btnText1 = document.getElementById("myBtn1");
-
-	  if (dot.style.display === "none") {
-	    dot.style.display = "inline";
-	    btnText1.innerHTML = "Show More"; 
-	    moreText1.style.display = "none";
-	  } 
-	  else {
-	    dot.style.display = "none";
-	    btnText1.innerHTML = "Show Less"; 
-	    moreText1.style.display = "inline";
-	  }
+	function myFunction_1(){
+		var dots1 = document.getElementById("dots1");
+		var moreText1 = document.getElementById("more1");
+		var btnText1 = document.getElementById("myBtn1");
+		if (dots1.style.display === "none") {
+			dots1.style.display = "inline";
+			btnText1.innerHTML = "Show More";
+			moreText1.style.display = "none";
+		}
+		else {
+			dots1.style.display = "none";
+			btnText1.innerHTML = "Show Less";
+			moreText1.style.display = "inline";
+		}
 	}
-
 </script>
 
 </html>
