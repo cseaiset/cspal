@@ -12,7 +12,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-title" content="CSPAL">
-	<meta name="theme-color" content="lightblue" />
+	<meta name="theme-color" content="black" />
 	<link rel="apple-touch-icon" href="assets/icons/152x152.png">
     <link rel="manifest" href="manifest.json">
     <!--bootstrap and material design-->
@@ -410,7 +410,7 @@
                                             <td>
                                                 <!--<ul style="padding-left: 15px; margin: 0px;">-->
                                                 	Bring tutorial book!<br>
-                                                	Revise the portions abt MC (Take a printout or study from the <a href="doc.html">pdf here</a>)
+                                                	Revise the portions abt MC (Take a printout or study from the pdf. <a href="assets/docs/MPMC.pdf" download="MC.pdf">Download PDF</a>)
                                                 	<br>
                                                 	<span id="dots"></span>
                                                 	<span id="more">
@@ -749,6 +749,7 @@
 </body>
 
 <script type="text/javascript">
+    //service worker registration
 	if ('serviceWorker' in navigator) {
 	  window.addEventListener('load', function() {
 	    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
@@ -760,7 +761,6 @@
 	    });
 	  });
 	}
-
 
 	$(document).ready(function() {
 	  var d = new Date();
