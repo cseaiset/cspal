@@ -1,6 +1,10 @@
 var cacheName = 'cspal-v1';
 var filesToCache = [
     '/',
+    '/assets/css/bootstrap.min.css',
+    '/assets/css/main.css',
+    '/assets/css/style.min.css',
+    '/assets/js/bootstrap.min.js',
     '/assets/images/dsc logo.jpg'
 ];
 self.addEventListener('install', function(event) {
