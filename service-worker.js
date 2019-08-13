@@ -55,7 +55,7 @@ self.addEventListener('notificationclick', function(e) {
   if (action === 'close') {
     notification.close();
   } else {
-    clients.openWindow('cspal.tk/index.html');
+    clients.openWindow('https://cspal.tk/index.html');
     notification.close();
   }
 });
