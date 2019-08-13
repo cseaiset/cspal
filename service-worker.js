@@ -34,6 +34,6 @@ self.addEventListener('activate', function(event) {
 });
 self.addEventListener('fetch', function(event){
     event.respondWith(
-        fetch("/index.html")
+        fetch(event.request)
     );
 });
