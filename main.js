@@ -6,7 +6,7 @@ function displayNotification() {
   if (Notification.permission == 'granted') {
     navigator.serviceWorker.ready.then(function(reg) {
       var options = {
-        body: 'Welcome to CSPAL',
+        body: 'From now recieve important updates through notifications!',
         icon: 'assets/icons/48x48.png',
         vibrate: [100, 50, 100],
         data: {
@@ -14,7 +14,7 @@ function displayNotification() {
           primaryKey: 1
         }
       };
-      reg.showNotification('New Message', options);
+      reg.showNotification('Welcome to CSPAL', options);
     });
   }
 
@@ -26,5 +26,3 @@ function displayNotification() {
 	});
   }
 }
-
-displayNotification();
