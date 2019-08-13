@@ -1,6 +1,7 @@
 var cacheName = 'cspal-v1';
 var filesToCache = [
     '/',
+    '/hw.html',
     '/assets/css/bootstrap.min.css',
     '/assets/css/main.css',
     '/assets/css/style.min.css',
