@@ -28,7 +28,7 @@ self.addEventListener('activate', function(event) {
 self.addEventListener('fetch', function(event){
     event.respondWith(
         new Promise((resolve, reject) => {
-            var req = modify(event.request); // modify request
+            var req = modify(event.CACHE_NAME); // modify request
             
             // send network request
             fetch(req)
