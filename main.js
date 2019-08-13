@@ -4,7 +4,7 @@ Notification.requestPermission(function(status) {
 
 function displayNotification() {
   if (Notification.permission == 'granted') {
-    navigator.serviceWorker.getRegistration().then(function(reg) {
+    navigator.serviceWorker.ready.then(function(reg) {
       var options = {
         body: 'Welcome to CSPAL',
         icon: 'assets/icons/48x48.png',
@@ -17,11 +17,12 @@ function displayNotification() {
       reg.showNotification('New Message', options);
     });
   }
- else if (Notification.permission === "blocked") {
- } 
- else {
+
+  else if (Notification.permission === "blocked") {
+  } 
+  else {
 	Notification.requestPermission(function(status) {
     console.log('Notification permission status:', status);
 	});
- }
+  }
 }

@@ -38,6 +38,8 @@ self.addEventListener('fetch', function(event){
     );
 });
 
+
+//push notification event listeners
 self.addEventListener('notificationclose', function(e) {
   var notification = e.notification;
   var primaryKey = notification.data.primaryKey;
