@@ -24,7 +24,7 @@ self.addEventListener('activate', function(event) {
         .then(function(cacheNames) {
             return Promise.all(
                 cacheNames.map(function(cName) {
-                    if(cName !== cacheName){
+                    if (cName !== cacheName) {
                         return caches.delete(cacheName);
                     }
                 })
@@ -32,7 +32,7 @@ self.addEventListener('activate', function(event) {
         })
     );
 });
-self.addEventListener('fetch', function(event){
+self.addEventListener('fetch', function(event) {
     event.respondWith(
         fetch(event.request)
     );
@@ -41,21 +41,21 @@ self.addEventListener('fetch', function(event){
 
 //push notification event listeners
 self.addEventListener('notificationclose', function(e) {
-  var notification = e.notification;
-  var primaryKey = notification.data.primaryKey;
+    var notification = e.notification;
+    var primaryKey = notification.data.primaryKey;
 
-  console.log('Closed notification: ' + primaryKey);
+    console.log('Closed notification: ' + primaryKey);
 });
 
 self.addEventListener('notificationclick', function(e) {
-  var notification = e.notification;
-  var primaryKey = notification.data.primaryKey;
-  var action = e.action;
+    var notification = e.notification;
+    var primaryKey = notification.data.primaryKey;
+    var action = e.action;
 
-  if (action === 'close') {
-    notification.close();
-  } else {
-    clients.openWindow('https://cspal.tk/index.html');
-    notification.close();
-  }
+    if (action === 'close') {
+        notification.close();
+    } else {
+        clients.openWindow('https://cspal.tk/index.html');
+        notification.close();
+    }
 });
