@@ -8,7 +8,7 @@ function displayNotification() {
       var options = {
         body: 'From now recieve important updates through notifications!',
         icon: 'assets/icons/48x48.png',
-        vibrate: [100, 50, 100],
+        vibrate: [300],
         data: {
           dateOfArrival: Date.now(),
           primaryKey: 1
