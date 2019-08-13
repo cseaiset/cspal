@@ -14,10 +14,21 @@ self.addEventListener('install', function(event) {
         })
     );
 });
-self.addEventListener('activate', function(event) {
-  console.log('Activated sw.js', event);
-});
 
+self.addEventListener('activate', function(event) {
+    event.waitUntil(
+        caches.keys()
+        .then(function(cacheNames) {
+            return Promise.all(
+                cacheNames.map(function(cName) {
+                    if(cName !== cacheName){
+                        return caches.delete(cacheName);
+                    }
+                })
+            );
+        })
+    );
+});
 self.addEventListener('fetch', function(event){
     event.respondWith(
         fetch(event.request)
