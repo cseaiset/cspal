@@ -14,7 +14,7 @@ function displayNotification() {
           primaryKey: 1
         }
       };
-      reg.showNotification('Hello world!', options);
+      reg.showNotification('New Message', options);
     });
   }
 }
