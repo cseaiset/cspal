@@ -1,7 +1,9 @@
 var cacheName = 'cspal-v1';
 var filesToCache = [
-    '/'
-    '/assets/css/bootstrap.min.css',                // index.html
+    '/',
+    '/assets/css/bootstrap.min.css',
+    '/assets/css/main.css',
+    '/assets/css/style.min.css'
 ];
 self.addEventListener('install', function(event) {
     event.waitUntil(
