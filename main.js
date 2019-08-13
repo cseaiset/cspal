@@ -1,32 +1,20 @@
-Notification.requestPermission(result =>  {
-  console.log(result)
-  if (result === 'granted') {
-    alert('Thanks for giving me permissions. We will notify yu every time there is an important update. Happy Homeworking!')
-  }
+Notification.requestPermission(function(status) {
+    console.log('Notification permission status:', status);
 });
 
-Notification.requestPermission(result => {
-  if (result === 'granted') {
-    navigator.serviceWorker.ready.then(registration => {
-      registration.showNotification('New Message', {
+function displayNotification() {
+  if (Notification.permission == 'granted') {
+    navigator.serviceWorker.getRegistration().then(function(reg) {
+      var options = {
         body: 'Welcome to CSPAL',
-        tag: 'vibration-sample'
-      });
+        icon: 'icons/48x48.png',
+        vibrate: [100, 50, 100],
+        data: {
+          dateOfArrival: Date.now(),
+          primaryKey: 1
+        }
+      };
+      reg.showNotification('Hello world!', options);
     });
   }
-});
-
-Notification.requestPermission(result => {
-  if (result === 'granted') {
-
-    if ('Notification' in window) {
-      navigator.serviceWorker.ready.then(registration => {
-        registration.showNotification('Vibration Sample', {
-          body: 'Buzz! Buzz!',
-          tag: 'vibration-sample'
-        });
-      });
-    }
-
-  }
-});
+}
