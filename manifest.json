@@ -2,7 +2,7 @@
   "short_name": "CSPAL",
   "name": "CSPAL",
   "theme_color": "#4A90E2",
-  "background_color": "#fff",
+  "background_color": "#4C97AE",
   "display": "standalone",
   "icons": [
     {
