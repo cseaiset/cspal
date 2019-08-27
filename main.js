@@ -6,9 +6,9 @@ function displayNotification() {
     if (Notification.permission === "granted") {
         navigator.serviceWorker.ready.then(function(reg) {
             var options = {
-                body: 'SC Assignment added!',
+                body: 'Welcome to cspal',
                 icon: 'assets/icons/48x48.png',
-                vibrate: [300,0,0]
+                vibrate: [100,0,100]
                 data: {
                     dateOfArrival: Date.now(),
                     primaryKey: 1
