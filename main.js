@@ -8,7 +8,7 @@ function displayNotification() {
             var options = {
                 body: 'Welcome to cspal',
                 icon: 'assets/icons/48x48.png',
-                vibrate: [100,0,100]
+                vibrate: [100, 0, 100]
                 data: {
                     dateOfArrival: Date.now(),
                     primaryKey: 1
@@ -16,12 +16,10 @@ function displayNotification() {
             };
             reg.showNotification('Homeworks Alert', options);
         });
-    } 
-    else if (Notification.permission === "blocked") {} 
-    else {
+    } else if (Notification.permission === "blocked") {} else {
         Notification.requestPermission(function(status) {
             console.log('Notification permission status:', status);
-    	});
+        });
     }
 }
 
