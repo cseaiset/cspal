@@ -39,7 +39,7 @@ self.addEventListener('fetch', function(event) {
 });
 
 
-//push notification event listeners
+//notification event listeners
 self.addEventListener('notificationclose', function(e) {
     var notification = e.notification;
     var primaryKey = notification.data.primaryKey;
@@ -58,4 +58,26 @@ self.addEventListener('notificationclick', function(e) {
         clients.openWindow('https://cspal.tk/index.html');
         notification.close();
     }
+});
+
+//web push notification
+self.addEventListener('push', function(e) {
+  var options = {
+    body: 'Welcome to CSPAL',
+    icon: 'assets/icons/48x48.png',
+    vibrate: [100, 50, 100],
+    data: {
+      dateOfArrival: Date.now(),
+      primaryKey: '2'
+    },
+    actions: [
+      {action: 'explore', title: 'Open',
+        icon: 'assets/icons/checkmark.png'},
+      {action: 'close', title: 'Close',
+        icon: 'assets/icons/crossmark.png'},
+    ]
+  };
+  e.waitUntil(
+    self.registration.showNotification('CSPAL', options)
+  );
 });
