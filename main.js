@@ -33,5 +33,9 @@ function displayNotification() {
         });
     }
 }
+if ('Notification' in window && navigator.serviceWorker) {
+ displayNotificaion()
+}
+
 
 displayNotification()
