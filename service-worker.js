@@ -37,6 +37,56 @@ self.addEventListener('fetch', function(event) {
     );
 });
 
+//web push notification
+self.addEventListener('push', function(e) {
+  var options = {
+    body: 'Welcome to CSPAL',
+    icon: 'assets/icons/48x48.png',
+    vibrate: [100, 50, 100],
+    data: {
+      dateOfArrival: Date.now(),
+      primaryKey: '2'
+    },
+    actions: [
+      {action: 'explore', title: 'Open',
+        icon: 'assets/icons/checkmark.png'},
+      {action: 'close', title: 'Close',
+        icon: 'assets/icons/crossmark.png'},
+    ]
+  };
+  e.waitUntil(
+    self.registration.showNotification('CSPAL', options)
+  );
+});
+
+//data payload
+
+self.addEventListener('push', function(e) {
+  var body;
+
+  if (e.data) {
+    body = e.data.text();
+  } else {
+    body = 'Welcome to CSPAL';
+  }
+
+  var options = {
+    body: body,
+    icon: 'assets/icons/48x48.png',
+    vibrate: [100, 50, 100],
+    data: {
+      dateOfArrival: Date.now(),
+      primaryKey: 1
+    },
+    actions: [
+      {action: 'explore', title: 'Open'},
+      {action: 'close', title: 'Close'},
+    ]
+  };
+  e.waitUntil(
+    self.registration.showNotification('CSPAL', options)
+  );
+});
 
 //notification event listeners
 self.addEventListener('notificationclose', function(e) {
@@ -59,24 +109,3 @@ self.addEventListener('notificationclick', function(e) {
     }
 });
 
-//web push notification
-self.addEventListener('push', function(e) {
-  var options = {
-    body: 'Welcome to CSPAL',
-    icon: 'assets/icons/48x48.png',
-    vibrate: [100, 50, 100],
-    data: {
-      dateOfArrival: Date.now(),
-      primaryKey: '2'
-    },
-    actions: [
-      {action: 'explore', title: 'Open',
-        icon: 'assets/icons/checkmark.png'},
-      {action: 'close', title: 'Close',
-        icon: 'assets/icons/crossmark.png'},
-    ]
-  };
-  e.waitUntil(
-    self.registration.showNotification('CSPAL', options)
-  );
-});
