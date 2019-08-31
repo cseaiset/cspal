@@ -22,7 +22,7 @@ function displayNotification() {
 
       };
 
-        reg.showNotification('Hello world!', options);
+        reg.showNotification('CSPAL', options);
         });
     }
 
