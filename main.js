@@ -26,7 +26,7 @@ function displayNotification() {
         });
     }
 
-    else if (Notification.permission == 'blocked') {} 
+    else if (Notification.permission == 'denied') {} 
         else {
         Notification.requestPermission(function(status) {
             console.log('Notification permission status:', status);
