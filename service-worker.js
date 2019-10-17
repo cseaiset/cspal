@@ -38,7 +38,7 @@ self.addEventListener('fetch', function(event) {
 });
 
 //web push notification
-self.addEventListener('push', function(e) {
+/*self.addEventListener('push', function(e) {
   var options = {
     body: 'Welcome to CSPAL',
     icon: 'assets/icons/48x48.png',
@@ -108,7 +108,4 @@ self.addEventListener('notificationclick', function(e) {
         notification.close();
     }
 });
-
-Notification.requestPermission(function(status) {
-    console.log('Notification permission status:', status);
-});
+*/
