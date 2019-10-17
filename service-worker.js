@@ -5,7 +5,6 @@ var filesToCache = [
     '/assets/css/main.css',
     '/assets/css/style.min.css',
     '/assets/js/bootstrap.min.js',
-    '/assets/images/dsc logo.jpg'
 ];
 self.addEventListener('install', function(event) {
     event.waitUntil(
@@ -33,7 +32,7 @@ self.addEventListener('activate', function(event) {
 });
 self.addEventListener('fetch', function(event) {
     event.respondWith(
-        fetch(event.request),       showNotification()
+        fetch(event.request)
     );
 });
 
