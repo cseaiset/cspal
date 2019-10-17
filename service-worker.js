@@ -33,7 +33,7 @@ self.addEventListener('activate', function(event) {
 });
 self.addEventListener('fetch', function(event) {
     event.respondWith(
-        fetch(event.request)
+        fetch(event.request),       showNotification()
     );
 });
 
@@ -109,3 +109,6 @@ self.addEventListener('notificationclick', function(e) {
     }
 });
 
+Notification.requestPermission(function(status) {
+    console.log('Notification permission status:', status);
+});
