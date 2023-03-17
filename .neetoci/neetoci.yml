@@ -1,0 +1,11 @@
+version: v1.0
+name: cicheck
+global_job_config:
+  setup:
+    - checkout
+    - yarn
+  jobs:
+    - name: Tests
+      commands:
+        - sleep 60
+        - yarn add is-odd
